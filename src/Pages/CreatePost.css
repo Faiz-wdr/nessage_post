@@ -1,0 +1,86 @@
+.card-msg{
+    margin: 50px 450px 50px 400px;
+}
+
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.btn-createpost{
+    position: absolute;
+  top: 56%;
+  left: 71.5%;
+  margin: -30px 0 0 -33px;
+background-color: #ff588a;
+color: white;
+font-size: 15px;
+padding-left: 40px;
+padding-right: 40px;
+padding-top: 10px;
+padding-bottom: 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.form-control, .form-control-msg{
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 7px;
+    margin-left: 10px;
+    display: block;
+    width: 800px;
+    height: 30px;
+    box-shadow: 0 0 0 0 ;
+        background: inherit;
+        backdrop-filter: blur(10px);
+    background-color: #d560a695;
+    font-size: 15px;
+        border-radius: 6px;
+        opacity: 0.3;
+        padding: 5px 120px 5px 10px;  
+        border-color: #874071;
+        border: none;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+        outline: none;
+}
+
+.form-control-msg{
+    height: 200px;
+}
+
+@media (max-width: 480px){
+
+    h1{
+        font-size: 20px;
+    }
+    .card-msg{
+        margin: 50px 52px 50px 50px;
+    }
+    
+    .form-control, .form-control-msg{
+        width: 245px;
+
+    }
+    .form-control-msg{
+        height: 400px;
+    }
+
+   .btn-createpost{
+    font-size: 12px;
+    margin-left: -30px;
+    margin-top: 180px;
+
+    }
+}
