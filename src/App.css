@@ -3,11 +3,9 @@
   padding: 0;
   }
 
-  .bckgrd{
-    background-color: black;
-    min-height: 100vh;
-  }
-
+.ft{
+  height: 50px;
+}
   .bg-logs{
     height: 100vh;
 
@@ -15,9 +13,10 @@
   .bg{
    background-image: url("bg-img.png");
    background-repeat: repeat-y;
-   height: 100%;
+   min-height: 100vh;
+   height: auto;
   }
-  
+
   .navbar{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -127,11 +126,14 @@ input[type=password]:focus {
 }
 
 .ft-txt{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+ background-color: rgba(0, 0, 0, 0.601);
   color: white;
   display: flex ;
     justify-content: center;
-    padding-top: 380px;
-    margin-top: 50px;
+    margin-top: 350px;
+    padding-top: 18px;
     padding-bottom: 18px;
     font-size: 10px;
 }
@@ -145,8 +147,14 @@ span{
 @media (max-width: 480px){
   .bg{
     background-image: url("bg-img-mob.png");
-    background-size: cover;
+    background-repeat: repeat-y;
   }
+
+  .bg-logs{
+    height: 35vh;
+
+  }
+
     .navbar{
       margin-left: -180px;
     }
@@ -163,5 +171,13 @@ span{
       font-size: 12px;
       margin: -427px 0px 0px 70px;
     }
+    .ft-txt{
+      position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+      
+      
+    }
 
-}
+  }

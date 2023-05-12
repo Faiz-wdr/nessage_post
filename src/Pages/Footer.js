@@ -4,11 +4,11 @@ const curryear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <div>
+
         <p className='ft-txt'>
-          © <span>Faiz Rahim</span> . All Rights Resrved {curryear}
+          © Faiz Rahim .  All Rights Resrved {curryear}
         </p>
-    </div>
+
   )
 }
 

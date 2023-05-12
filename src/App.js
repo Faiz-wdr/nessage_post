@@ -10,7 +10,6 @@ import { signOut } from 'firebase/auth';
 import { auth } from './firebase-config';
 
 
-
 function App(){
 
 const [ isAuth, setIsAuth ] = useState(localStorage.getItem('isAuth'));
@@ -51,14 +50,13 @@ signOut(auth)?.then(() => {
           )}
         </div>
 
-        <div className="container mt-5">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Message" element={<Message isAuth={isAuth}/>} />
             <Route path="/CreatePost" element={<CreatePost isAuth={isAuth} />} />
             <Route path="/login" element={<LogIn setIsAuth={setIsAuth} />} />
           </Routes>
-        </div>
+
       </Router>
       <Footer /> 
     </div>

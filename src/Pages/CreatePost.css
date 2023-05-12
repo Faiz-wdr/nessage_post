@@ -67,6 +67,7 @@ cursor: pointer;
     }
     .container{
     margin-left: -15px;
+    height: 100vh;
 }
     .card-msg{
         margin: 50px 50px 50px 50px;

@@ -1,9 +1,11 @@
 .Homepage{
-    background-color: none;
     margin: 50px 200px 50px 200px;
-    min-height: 100vh;
+    height: auto;
+    padding-bottom: 40px;
 }
-
+.container-mt{
+  
+}
 .card{
     background-image: linear-gradient(to right, rgba(174, 114, 149, 0.3) , rgba(255, 255, 255, 0));
     border-radius: 8px;
@@ -13,7 +15,6 @@
 }
 
 .btn-dlt-msg{
-    
     text-decoration: none;
     color: white;
     background-color: #ff588a;
@@ -49,7 +50,6 @@ h3{
 @media (max-width: 480px){
     .Homepage{
         margin: 50px 50px 50px 50px;
-        min-height: 100vh;
     
 }
 
@@ -71,5 +71,10 @@ h3{
         margin-top: -20px;
         margin-left: -100px ;
     }
+    .ft-txt{
+        background-color: none;
+        margin-top: -40px;
+        
+      }
 }
 
