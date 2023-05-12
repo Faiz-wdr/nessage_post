@@ -59,17 +59,22 @@ cursor: pointer;
 }
 
 @media (max-width: 480px){
-
+    /* .container{
+        background-color: yellow;
+    } */
     h1{
         font-size: 20px;
     }
+    .container{
+    margin-left: -6px;
+}
     .card-msg{
         margin: 50px 50px 50px 50px;
         width: 355px;
     }
     
     .form-control, .form-control-msg{
-        width: 210px;
+        width: 220px;
 
     }
     .form-control-msg{
@@ -78,7 +83,7 @@ cursor: pointer;
 
    .btn-createpost{
     font-size: 12px;
-    margin-left: -60px;
+    margin-left: -65px;
     margin-top: 180px;
 
     }
