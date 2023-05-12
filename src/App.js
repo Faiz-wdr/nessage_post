@@ -4,11 +4,12 @@ import Home from './Pages/Home';
 import CreatePost from './Pages/CreatePost';
 import LogIn from './Pages/LogIn';
 import Message from './Pages/Message';
+import Footer from './Pages/Footer';
 import { useState } from 'react';
 import { signOut } from 'firebase/auth';
 import { auth } from './firebase-config';
 
-const curryear = new Date().getFullYear();
+
 
 function App(){
 
@@ -59,9 +60,7 @@ signOut(auth)?.then(() => {
           </Routes>
         </div>
       </Router>
-      <p className='ft-txt'>
-          © <span>Faiz Rahim</span> . All Rights Resrved {curryear}
-        </p>
+      <Footer /> 
     </div>
     </div>
   );

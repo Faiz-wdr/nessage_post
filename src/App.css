@@ -6,7 +6,10 @@
   .bckgrd{
     background-color: black;
     min-height: 100vh;
+  }
 
+  .bg-logs{
+    height: 100vh;
 
   }
   .bg{
@@ -14,7 +17,7 @@
    background-repeat: repeat-y;
    height: 100%;
   }
-
+  
   .navbar{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -142,9 +145,10 @@ span{
 @media (max-width: 480px){
   .bg{
     background-image: url("bg-img-mob.png");
+    background-size: cover;
   }
     .navbar{
-      margin-left: -120px;
+      margin-left: -180px;
     }
     .h-text{
       font-size: 40px;
@@ -153,11 +157,11 @@ span{
     a{
       font-size: 15px;
       margin: 10px;
-      margin-top: 23px;
+      margin-top: 40px;
     }
     .btn-logout{
       font-size: 12px;
-      margin: -444px 0px 0px 70px;
+      margin: -427px 0px 0px 70px;
     }
 
 }
