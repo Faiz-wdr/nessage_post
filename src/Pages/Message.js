@@ -39,7 +39,7 @@ if(loading){
           <div key={post.id} className="card">
           
             <div className="card-body">
-            {isAuth && post.author.id === auth.currentUser.id && <div className='d-flex'>
+            {isAuth && post.author.id === auth.currentUser.uid && <div className='d-flex'>
           <button className='btn-dlt-msg' onClick={() => {deletePost(post?.id)}}>
           Delete Message
           </button>
