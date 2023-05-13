@@ -144,7 +144,7 @@ span{
   -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 480px){
+@media (max-width: 768px){
   .bg{
     background-image: url("bg-img-mob.png");
     background-repeat: repeat-y;
