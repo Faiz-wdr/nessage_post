@@ -42,23 +42,34 @@ const CreatePost = ({isAuth}) => {
   })
 
   return (
-    <div className='container'>
-    <div className='card-msg'>
-    <h1>Post a Message</h1>
-      <div className='mb-3'>
-        {/* <label htmlFor='title' className='form-label'>Title</label> */}
-        <input type='text' placeholder='Message Title' className='form-control' onChange={(e) => setTitle(e.target.value)}/>
+    <div className="container">
+      <div className="card-msg">
+        <h1>Post a Message</h1>
+        <div className="mb-3">
+          {/* <label htmlFor='title' className='form-label'>Title</label> */}
+          <input
+            type="text"
+            placeholder="Message Title"
+            className="form-control"
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
+        <div className="mb-3">
+          {/* <label htmlFor='posts' className='form-label'>Posts</label> */}
+          <textarea
+            placeholder="Your Message"
+            className="form-control-msg"
+            onChange={(e) => setPostTitle(e.target.value)}
+          ></textarea>
+        </div>
+        <div className="btn-container">
+          <button className="btn-createpost" onClick={createPost}>
+            Submit
+          </button>
+        </div>
       </div>
-      <div className='mb-3'>
-        {/* <label htmlFor='posts' className='form-label'>Posts</label> */}
-        <textarea placeholder='Your Message' className='form-control-msg'  onChange={(e) => setPostTitle(e.target.value)}></textarea>
-      </div>
-      <button className='btn-createpost' onClick={createPost}>Submit</button>
-
     </div>
-    
-    </div>
-  )
+  );
 }
 
 export default CreatePost

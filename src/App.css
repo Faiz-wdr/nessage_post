@@ -22,6 +22,8 @@
     font-weight: 300;
 display: flex ;
     justify-content: center;
+    /* background-color: yellow; */
+    align-items: center;
   }
 
   a{
@@ -100,10 +102,10 @@ cursor: pointer;
  }
 
 .btn-logout{
-  position: absolute;
+  /* position: absolute;
   top: 56%;
   left: 50%;
-  margin: -475px 0 0 185px;
+  margin: -475px 0 0 185px; */
 background-color: #9658FF;
 color: white;
 font-size: 15px;
@@ -156,7 +158,7 @@ span{
   }
 
     .navbar{
-      margin-left: -180px;
+      margin-left: -50px;
     }
     .h-text{
       font-size: 40px;
@@ -169,7 +171,9 @@ span{
     }
     .btn-logout{
       font-size: 12px;
-      margin: -427px 0px 0px 70px;
+      /* margin: -427px 0px 0px 70px; */
+      margin-top: 40px;
+      margin-left: 10px;
     }
     .ft-txt{
       position: fixed;
