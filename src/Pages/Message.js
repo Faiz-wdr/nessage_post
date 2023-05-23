@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 import { useEffect, useState } from 'react';
 import { getDocs ,collection, deleteDoc, doc } from 'firebase/firestore';
 import { auth, db } from '../firebase-config';
@@ -15,11 +15,13 @@ const getPosts = async() => {
     const data= await getDocs(postCollectionRef);
     setPostList(data.docs.map((doc)=> ({...doc.data(), id:doc?.id})))
     setLoading(false);
+
 }
 
 const deletePost = async (id) => {
     const postDoc = doc(db, 'posts', id)
     await deleteDoc(postDoc);
+    prompt('Type REMOVE to delete this Message');
     getPosts();
     
 }
@@ -34,14 +36,14 @@ if(loading){
 
   return (
     <div className="Homepage">
-      {postList.length === 0 ? <h3> Loading...</h3> : postList.map( (post) => {
+      {postList.length === 0 ? <h3> Create A Message</h3> : postList.map( (post) => {
         return (
           <div key={post.id} className="card">
           
             <div className="card-body">
-            {isAuth && post.author.id === auth.currentUser.uid && <div className='d-flex'>
+            {isAuth && post.author.id === auth.currentUser.id && <div className='d-flex'>
           <button className='btn-dlt-msg' onClick={() => {deletePost(post?.id)}}>
-          Delete Message
+          Delete
           </button>
           </div>}
               <h5 className="card-title">{post?.title}</h5>
